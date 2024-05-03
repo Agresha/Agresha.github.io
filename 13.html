@@ -1,0 +1,23 @@
+<!-- dispaly hello with incresing font size in interval of 15 ms in blue color and it should stop when font size which is 250 itself -->
+<html>
+
+<head>
+</head>
+
+<body>
+    <p id="demo"></p>
+    <script>
+        size = 15
+        setInterval(function () {
+            p = document.getElementById("demo")
+            p.innerHTML = "Hello"
+            p.style.color = "blue"
+            p.style.fontSize = size
+            if (size <= 50) {
+                size++
+            }
+        }, 15)
+    </script>
+</body>
+
+</html>

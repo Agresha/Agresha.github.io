@@ -1,0 +1,35 @@
+<html>
+
+<head>
+    <script>
+        const sub = {
+            "FSD": [
+                {
+                    "topic": "HTML",
+                    "course": "Beginner",
+                    "context": { "tags": "table1", "form": "xyz" }
+                },
+                {
+                    "topic": "CSS",
+                    "course": "Beginner",
+                    "context": ["tags", "table", "form"]
+                }
+            ]
+        }
+        for (let key in sub) {
+            console.log(key);
+            for (let i = 0; i < sub[key].length; i++) {
+                console.log(sub[key][i].topic);
+                console.log(sub[key][i].course);
+                console.log(sub[key][i].context);
+            }
+        }
+        for (x in sub.FSD) {
+            for (y in sub.FSD[x]) {
+                console.log(sub.FSD[x][y])
+            }
+        }
+    </script>
+</head>
+
+</html>

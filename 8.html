@@ -1,0 +1,42 @@
+<!-- get json object value using for loop and make html table to display their value it should be heading of 
+table & value should be val of table -->
+<html>
+
+<head>
+</head>
+
+<body>
+    <script>
+        const sub = {
+            "FSD": [
+                {
+                    "topic": "HTML",
+                    "course": "Beginner",
+                    "context": ["tags", "table", "form"]
+                },
+                {
+                    "topic": "CSS",
+                    "course": "Beginner",
+                    "context": ["tags", "table", "form"]
+                }
+            ]
+        }
+        var temp = "<table border='2px'>"
+        temp += "<tr>"
+        for (x in sub.FSD[0]) {
+            temp += "<th>" + x + "</th>"
+        }
+        temp += "</tr>"
+        for (x in sub.FSD) {
+            temp += "<tr>"
+            for (y in sub.FSD[x]) {
+                temp += "<td>" + sub.FSD[x][y] + "</td>"
+            }
+            temp += "</tr>"
+        }
+        temp += "</table>"
+        document.write(temp)
+    </script>
+</body>
+
+</html>

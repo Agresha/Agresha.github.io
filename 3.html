@@ -1,0 +1,25 @@
+<!-- write json string with date property with year month date and print date in IST by clicking a button -->
+<html>
+
+<head>
+    <script>
+        let Data = {
+            "date": {
+                "year": 2022,
+                "month": 7,
+                "date": 25
+            }
+        };
+
+        function printDate(id) {
+            let date = new Date(Data.date.year, Data.date.month, Data.date.date);
+            console.log(date);
+        }
+    </script>
+</head>
+
+<body>
+    <button onclick="printDate(this)">Click to print</button>
+</body>
+
+</html>

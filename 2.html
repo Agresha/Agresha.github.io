@@ -1,0 +1,24 @@
+<html>
+
+<head>
+    <script>
+        const sub = {
+            "FSD": [
+                {
+                    "topic": "HTML",
+                    "course": "Beginner",
+                    "context": { "tags": "table1", "form": "xyz" }
+                },
+                {
+                    "topic": "CSS",
+                    "course": "Beginner",
+                    "context": ["tags", "table", "form"]
+                }
+            ]
+        }
+        console.log(sub.FSD[0].context["tags"])
+        console.log(sub.FSD[1].context[0])
+    </script>
+</head>
+
+</html>

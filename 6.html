@@ -1,0 +1,24 @@
+<!-- write a java script code to store an array of objects having age and name display name and age of person 
+with the highest age -->
+<html>
+
+<head>
+    <script>
+        user = [
+            { name: "abc", age: 25 },
+            { name: "xyz", age: 30 },
+            { name: "pqr", age: 28 },
+            { name: "vwx", age: 35 },
+            { name: "omn", age: 22 }
+        ];
+        let oldestPerson = user[0];
+        for (let i = 1; i < user.length; i++) {
+            if (user[i].age > oldestPerson.age) {
+                oldestPerson = user[i];
+            }
+        }
+        console.log(`The person with the highest age is ${oldestPerson.name} with an age of ${oldestPerson.age}`);
+    </script>
+</head>
+
+</html>

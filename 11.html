@@ -1,0 +1,21 @@
+<!-- addition of two no. on browser using callback function -->
+<html>
+
+<head>
+</head>
+
+<body>
+    <p id="demo"></p>
+    <script>
+        function myFunction(sum) {
+            document.getElementById("demo").innerHTML = "<b>" + sum + "</b>"
+        }
+        function add(a, b, callback) {
+            var sum = a + b;
+            callback(sum);
+        }
+        add(5, 5, myFunction);
+    </script>
+</body>
+
+</html>

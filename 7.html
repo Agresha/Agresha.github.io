@@ -1,0 +1,23 @@
+<!-- to define a JSON OBJECT NAME AS DIV 1 AND DIV 2 HAVING AN ARRAY TO STORE NAME OF STUDENTS THIS NAMES SHOULD 
+BE SORTED ALPHABETICALLY IN THE OBJ & SHOULD BE RETURN AT LAST BOTH DIV OBJ SHOULD BE VISIBLE WITH NAME 
+SORTED ALPHA -->
+<html>
+
+<head>
+    <script>
+        test = {
+            div1: {
+                name: ["z", "b", "h"]
+            },
+            div2: {
+                name: ["y", "a", "g"]
+            }
+        }
+        const div1_data = test.div1.name
+        const div2_data = test.div2.name
+        var combine_data = div1_data.concat(div2_data).sort()
+        console.log(combine_data)
+    </script>
+</head>
+
+</html>
